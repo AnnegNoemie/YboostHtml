@@ -41,6 +41,14 @@ body{
     align-items: center;
     padding-left: 3px;      
 }
+.logo{
+    padding-right: 30px;
+
+}
+.logo img{
+    height: 34px ;
+    aspect-ratio: 1;
+}
 
 #logo img{
     height: auto;
