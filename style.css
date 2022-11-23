@@ -1,68 +1,72 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
-    overflow-y: hidden; /* Hide vertical scrollbar */
-    overflow-x: hidden; /* Hide horizontal scrollbar */
+
+body {
+    overflow-y: hidden;
+    /* Hide vertical scrollbar */
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
 }
 
-#page{
+#page {
     display: flex;
     flex-direction: column;
     height: 100vh;
     width: 100%;
-    background-color :#e2e2e2;
+    background-color: #e2e2e2;
 }
 
-#header{
-    display: flex;
-    height: 10%;
-    width: 100%;
 
-}
-#header{
+#header {
     display: flex;
     width: 100%;
     height: 10%;
 
 }
-#conteneur1{
+
+#conteneur1 {
     display: flex;
     height: 100%;
     width: 50%;
 }
 
-#logo{
-    display : flex;
+#logo {
+    display: flex;
     width: 50px;
     aspect-ratio: 1;
     justify-content: center;
     align-items: center;
-    padding-left: 3px;      
+    padding-left: 3px;
+    cursor: pointer;
 }
-.logo{
+
+.logo {
     padding-right: 30px;
+    cursor: pointer;
 
 }
-.logo img{
-    height: 34px ;
+
+.logo img {
+    height: 34px;
     aspect-ratio: 1;
 }
 
-#logo img{
+#logo img {
     height: auto;
     border: 1px solid brown;
 }
 
-#conteneur2{
+#conteneur2 {
     display: flex;
     align-items: center;
     height: 100%;
     width: 50%;
     justify-content: flex-end;
 }
-#body{
+
+#body {
     display: flex;
     flex-direction: column;
     height: 75%;
@@ -71,78 +75,118 @@ body{
 
 }
 
-#top-text{
+#top-text {
     display: flex;
     height: 10%;
     width: 100%;
     align-items: center;
+
 }
-#top-text p{
+
+#top-text p {
     padding-left: 10px;
     transform: rotate(270deg);
+    font-family: 'Prompt100', sans-serif;
+    font-size: 10px;
+
 }
-#top-text{
+
+#top-text {
     display: flex;
     height: 10%;
     width: 100%;
     align-items: center;
 }
-#middle-text{
+
+#middle-text {
     display: flex;
     flex-direction: column;
-    height: 90%;
+    height: 80%;
     width: 100%;
 }
-.section{
+
+.section {
     display: flex;
     height: 33%;
     width: 100%;
     z-index: 1;
 }
-.left-part{
+
+.left-part {
     display: flex;
     height: 100%;
     width: 60%;
 }
-#m-top-right{
+
+#m-top-right {
     display: flex;
     height: 100%;
     width: 40%;
     padding-top: 50px;
     justify-content: center;
 }
-#m-top-right a{
-    color: black;
-    font-size: 40px;
+
+#m-top-right #link-text {
+    display: flex;
+    height: 16%;
+    width: auto;
+    text-decoration: underline;
+
 }
-.text-div{
+
+#link-text a {
+    color: black;
+    font-size: 26px;
+    text-decoration: none;
+    font-family: 'Prompt100', sans-serif;
+    transition: 300ms;
+}
+
+#suoui:hover {
+    font-size: 30px;
+}
+
+.text-div {
     display: flex;
     height: 100%;
     width: 40%;
     padding-left: 500px;
     align-items: center;
     font-family: 'Prompt', sans-serif;
-    font-size: 150px;
+    font-size: 180px;
 }
-#img-top{
+
+#img-top {
     display: flex;
     height: 100%;
     width: 60%;
     justify-content: center;
     align-items: center;
 }
-#img-top img{
+
+#img-top #img-txt {
     height: 170px;
-    width: 450px;
+    width: 500px;
+    background-image: url(/ressources/marvin-meyer-QgIgSpe2jAY-unsplash\ \(1\).jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+
     border: 5px solid black;
     border-radius: 27px;
+    cursor: pointer;
+    transition: 600ms;
+
 }
 
-#animation-text{
+#img-top #img-txt:hover {
+    width: 635px;
+}
+
+#animation-text {
     height: 600px;
     width: 100%;
     position: absolute;
-    top: 33%;
+    top: 32%;
     text-align: center;
 }
 
@@ -152,15 +196,25 @@ body{
     color: white;
 }
 
-
-
-#footer{
+#footer {
     display: flex;
     height: 15%;
     width: 100%;
-    background-image: url(/ressources//marvin-meyer-QgIgSpe2jAY-unsplash.jpg);
-    background-position: center center;
+    background-image: url(/ressources/filipp-romanovski--sQUISIW1-s-unsplash.jpg);
+    background-position: top top;
+    background-repeat: no-repeat;
 }
-#footer img{
 
+#footer img {
+    position: absolute;
+    right: 200px;
+    bottom: 1px;
+    height: 150px;
+    aspect-ratio: 1;
+    cursor: pointer;
+    transition: 600ms;
+}
+
+#footer img:hover {
+    transform: rotate(180deg);
 }
